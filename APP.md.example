@@ -1,0 +1,103 @@
+# APP.md — Application Specification Template
+# ─────────────────────────────────────────────
+# Copy this file to APP.md and fill it in.
+# Claude Code will read APP.md and build accordingly.
+# Delete sections that are not relevant to your app.
+# ─────────────────────────────────────────────
+
+## App name
+My App
+
+## Description
+A short, clear description of what this application does and who uses it.
+
+---
+
+## Technology stack
+
+> Be explicit. Claude Code will use exactly what you specify here.
+
+- **Language**: Java 21 / TypeScript / Python 3.12 / Go 1.22
+- **Framework**: Spring Boot 3.4 / Next.js 14 / FastAPI / Gin
+- **Database**: PostgreSQL 17 / MySQL 8 / SQLite / MongoDB
+- **Auth**: JWT / OAuth2 via Keycloak / None
+- **Build tool**: Maven / Gradle / npm / pip / go modules
+- **Container**: Docker + Docker Compose
+
+---
+
+## Key features
+
+1. Feature one — short description
+2. Feature two — short description
+3. Feature three — short description
+
+---
+
+## Data model
+
+### Entity: ExampleEntity
+
+| Field | Type | Notes |
+|---|---|---|
+| id | Long / UUID | Auto-generated |
+| name | String | Required, max 100 chars |
+| createdAt | Timestamp | Auto-set on creation |
+
+---
+
+## API / UI contract
+
+### REST API example
+
+| Method | Path | Description |
+|---|---|---|
+| GET | /api/items | List all items |
+| GET | /api/items/{id} | Get item by ID |
+| POST | /api/items | Create item |
+| PUT | /api/items/{id} | Update item |
+| DELETE | /api/items/{id} | Delete item |
+
+### UI pages (if applicable)
+
+- `/` — Landing / dashboard
+- `/items` — List view
+- `/items/new` — Create form
+- `/items/:id` — Detail view
+
+---
+
+## Infrastructure (Docker Compose services)
+
+- App on port `8080`
+- PostgreSQL on port `5432` (user: `appuser`, db: `appdb`)
+- Redis on port `6379` (optional, for caching)
+- Keycloak on port `8180` (optional, for auth)
+
+---
+
+## Environment variables
+
+| Variable | Description | Example |
+|---|---|---|
+| `DATABASE_URL` | DB connection string | `jdbc:postgresql://localhost:5432/appdb` |
+| `DB_USER` | DB username | `appuser` |
+| `DB_PASSWORD` | DB password | `secret` |
+
+---
+
+## Quality requirements
+
+- Unit tests for all service/business logic classes
+- Integration tests for all REST endpoints
+- Test coverage target: 80%+
+- Input validation on all POST/PUT endpoints
+- Structured logging (JSON preferred)
+- Health check endpoint at `/actuator/health` or `/health`
+
+---
+
+## Additional notes
+
+Add anything else Claude Code should know: coding style preferences, libraries to avoid,
+naming conventions, security constraints, performance expectations, etc.
