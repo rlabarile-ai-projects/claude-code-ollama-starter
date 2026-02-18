@@ -118,6 +118,18 @@ Generated app code will live in its own subfolder (e.g. `./my-app/`) as specifie
 
 ---
 
+## Contributing
+
+Contributions are welcome! Before submitting a PR, please read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Good first contributions: adding tested model profiles, improving scripts for Windows/WSL, or sharing real-world `APP.md` examples for different stacks.
+
+- 🐛 [Report a bug](../../issues/new?template=bug_report.md)
+- 💡 [Request a feature](../../issues/new?template=feature_request.md)
+- 💬 [Start a discussion](../../discussions)
+
+---
+
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE) for details.
