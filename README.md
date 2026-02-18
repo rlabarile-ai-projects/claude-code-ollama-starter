@@ -34,7 +34,7 @@ Any additional tools (Java, Python, Docker, etc.) are only needed depending on t
 
 ```bash
 # 1. Clone this repo — use your actual app name as the folder
-git clone https://github.com/YOUR_USERNAME/claude-code-ollama-starter.git <your-app-name>
+git clone https://github.com/rlabarile-ai-projects/claude-code-ollama-starter.git <your-app-name>
 cd <your-app-name>
 
 # 2. (Optional) pick your model in .env before setup
